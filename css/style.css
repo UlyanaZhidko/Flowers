@@ -19,11 +19,20 @@
     font-style: normal;
 }
 
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #292929;
     color: white;
     font-family: 'Gotham Pro Regular', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* header */
+
 .header {
     padding-top: 50px;
 }
@@ -41,7 +50,7 @@ body {
 
 .header-phone {
     font-family: 'Gotham Pro Medium', sans-serif;
-    font-style: 20px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: right;
@@ -57,8 +66,168 @@ body {
 
 .callback {
     color: #ff3469;
-    font-style: 16px;
+    font-size: 16px;
     text-align: right;
     display: block;
     margin-top: 16px;
 }
+
+/* hero */
+
+.hero {
+    text-align: center;
+    padding: 100px 0 77px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.hero-title {
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    letter-spacing: 0.34px;
+    font-weight: 500;
+}
+
+.hero-description {
+    font-family: 'Gotham Pro Light', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+    line-height: 1.4;
+}
+
+.flowers-slider {
+    width: 100%;
+    margin: 87px 0 83px;
+}
+
+:root {
+    --swiper-navigation-size: 20px;
+    --swiper-theme-color: #ffffff;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    --swiper-theme-color: #ff2e55;
+}
+
+.hero-cta {
+    font-family: 'Gotham Pro Light', sans-serif;
+    display: block;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.bold-text {
+    font-family: 'Gotham Pro Medium', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #ff2e55;
+    padding: 30px 65px 26px;
+    margin-top: 36px;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 50px 0;
+}
+
+.review-slide {
+    padding-left: 90px;
+}
+
+.section-title {
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 98px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+.review-img {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    font-family: 'Gotham Pro Light', sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin-right: 52px;
+}
+
+.review-img:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.review-img>* {
+    position: relative;
+}
+
+.review-image-1 {
+    background: #000 url('../img/review-image-1.jpg');
+}
+
+.review-image-2 {
+    background: #000 url('../img/review-image-2.jpg');
+}
+
+.review-name {
+    margin-bottom: 7px;
+}
+
+.review-text {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.18px;
+    max-width: 486px;
+}
+
+.review-link {
+    color: #f24841;
+}
+
+/* advantages */
+
+.advantages {
+    text-align: center;
+    padding: 50px 0 100px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.advanteges-wrapper {
+    min-height: 85px;
+    margin-bottom: 30px;
+}
+
+.advantages-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 270px;
+    margin: auto;
+}
+
+.reviews-slider>.swiper-button-prev, .reviews-slider>.swiper-button-next {
+    --swiper-navigation-size: 40px;
+    --swiper-theme-color: #ff2e55;
+}
+
