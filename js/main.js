@@ -9,6 +9,11 @@ const flowersSlider = new Swiper('.flowers-slider', {
         prevEl: '.swiper-button-prev',
     },
 
+    // Переключение с клавиатуры
+    keyboard: {
+        enabled: true,
+    },
+
 });
 
 const reviewsSlider = new Swiper('.reviews-slider', {
@@ -20,6 +25,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+
+    // Переключение с клавиатуры
+    keyboard: {
+        enabled: true,
     },
 
 });

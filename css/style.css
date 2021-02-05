@@ -133,12 +133,19 @@ body {
     background-color: #ff2e55;
     padding: 30px 65px 26px;
     margin-top: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /* reviews */
 
 .reviews {
     padding: 50px 0;
+}
+
+.reviews-slider {
+    margin-top: 98px;
 }
 
 .review-slide {
@@ -149,7 +156,6 @@ body {
     font-family: 'Gotham Pro Medium', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 98px;
     text-align: center;
     letter-spacing: 0.3px;
 }
@@ -231,3 +237,214 @@ body {
     --swiper-theme-color: #ff2e55;
 }
 
+/* goods */
+
+.goods {
+    padding: 100px 0;
+}
+
+.section-description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    border: 3px solid white;
+    padding: 33px 35px 30px 35px;
+    margin-top: 27px;
+}
+
+.card-title {
+    margin-top: 23px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card-label {
+    font-size: 14px;
+    display: inline-block;
+    margin: 20px 0 7px;
+}
+
+.color-label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.color-input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -9;
+}
+
+.color-label.white {
+    background-color: #fff;
+}
+
+.color-label.biege {
+    background-color: #f7b496;
+}
+
+.color-label.pink {
+    background-color: #ed366e;
+}
+
+.color-label.red {
+    background-color: #ff0000;
+}
+
+.color-label.blue {
+    background-color: #12129d;
+}
+
+.counter-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #292929;
+    margin: 0 15px;
+}
+
+.counter-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #292929;
+    border: none;
+}
+
+.card-button {
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 10px 13px;
+}
+
+.more {
+    font-size: 14px;
+    color: #f24841;
+    display: block;
+    text-align: center;
+    margin-bottom: 39px;
+    padding: 10px;
+}
+
+.more:after {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 4px;
+    background: url('../img/caret.svg') no-repeat center;
+    margin-left: 14px;
+    vertical-align: middle;
+}
+
+/* offer */
+
+.offer {
+    padding: 100px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.offer-link {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 65px;
+}
+
+.offer-label {
+    margin-bottom: 22px;
+    font-size: 14px;
+    display: block;
+}
+
+.offer-phone {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+}
+
+/* footer */
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 33px;
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer-menu-item {
+    margin-right: 30px;
+}
+
+.social {
+    font-size: 16px;
+}
+
+.footer-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-phone {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-data {
+    background-color: white;
+}
+
+/* footer-data */
+
+.footer-data {
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.footer-data-description {
+    font-family: 'Gotham Pro Light', sans-serif;
+    letter-spacing: 0.12px;
+    font-size: 12px;
+    color: #292929;
+}
+
+.text-color-red {
+    font-family: 'Gotham Pro Medium', sans-serif;
+    color: #ff3469;
+}
+
+.footer-data-info {
+    font-size: 12px;
+    margin-top: 7px;
+    display: block;
+    text-align: right;
+    color: #292929;
+}
+
+.footer-data-link {
+    text-decoration: none;
+    color: #292929;
+}
